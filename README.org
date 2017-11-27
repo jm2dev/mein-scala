@@ -1,0 +1,19 @@
+* Overview
+
+Multi-module project for scala exercises.
+
+* Requirements
+
+- openjdk 8
+- sbt 1.0.x
+
+* Usage
+
+#+BEGIN_EXAMPLE
+sbt
+> clean
+> compile
+> test
+> projects
+> project PROJECT_NAME
+#+END_EXAMPLE
