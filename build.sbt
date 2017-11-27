@@ -6,6 +6,20 @@ lazy val commonSettings = Seq(
   scalaVersion := "2.12.4"
 )
 
+scalacOptions += "-Ypartial-unification"
+
+lazy val root = (project in file("."))
+  .aggregate(
+    standardExercises,
+    catsExercises
+  )
+
+lazy val standardExercises = (project in file("standard-exercises"))
+  .settings(
+    commonSettings,
+    libraryDependencies ++= standardExercisesDeps
+  )
+
 lazy val catsExercises = (project in file("cats-exercises"))
   .settings(
     commonSettings,

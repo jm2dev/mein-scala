@@ -17,3 +17,7 @@ sbt
 > projects
 > project PROJECT_NAME
 #+END_EXAMPLE
+
+* References
+
+- [[http://eed3si9n.com/herding-cats/polymorphism.html][Herding cats]]
