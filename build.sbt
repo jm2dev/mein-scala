@@ -11,7 +11,8 @@ scalacOptions += "-Ypartial-unification"
 lazy val root = (project in file("."))
   .aggregate(
     standardExercises,
-    catsExercises
+    catsExercises,
+    restExercises
   )
 
 lazy val standardExercises = (project in file("standard-exercises"))
@@ -26,3 +27,8 @@ lazy val catsExercises = (project in file("cats-exercises"))
     libraryDependencies ++= catsExercisesDeps
   )
 
+lazy val restExercises = (project in file("rest-exercises"))
+  .settings(
+    commonSettings,
+    libraryDependencies ++= restExercisesDeps
+  )
